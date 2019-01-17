@@ -1,11 +1,17 @@
 const expect = require('expect.js');
+const problems = require('../src/problems.js');
 
-describe('Fun challenges', () => {
+describe('Coding challenge - product of list ignores current index', () => {
+  it('should work when a list passed as the arg', () => {
+    var testList = [1,2,3,4];
+    expect(problems.productOfNotTheIndex(testList)).to.be.eql([24, 12, 8, 6])
+  });
 
-  it('Test Mocha: ', () => {
-    expect(true).to.be(true);
-    expect(true).to.not.be(false);
-    expect([1, 2, 3]).to.eql([1, 2, 3]);
+  // TODO test 0 in array
+
+  it('should fail when a non-list passed as the arg', () => {
+    var testList = "not list";
+    //expect(problem.productOfNotTheIndex(testList)).to.be([24, 12, 8, 6])
   });
 
 });
