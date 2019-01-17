@@ -1,4 +1,5 @@
 const expect = require('expect.js');
+const { getProductsExceptItself } = require('../src/problems');
 
 describe('Fun challenges', () => {
 
